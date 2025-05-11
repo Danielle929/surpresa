@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz 2 anos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="balloons-container">
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+  </div>
+
+  <h1 class="main-message">Feliz 2 anos para nós dois</h1>
+
+  <div class="img-box">
+    <img src="casal.jpg" alt="Casal apaixonado" class="casal-img"/>
+  </div>
+
+  <button class="heart-button" onclick="mostrarCartinha()">💌 Clique aqui</button>
+
+  <div id="cartinha" class="cartinha escondida">
+    <p>
+      Para o meu bombom…<br><br>
+      Dois anos e ainda parece que foi ontem que tudo começou. A gente já viveu tanta coisa, cada momento ao seu lado sempre vai estar gravado no meu coração e na minha memória, com nossas risadas, brincadeiras, olhares e aquele sentimento bom que só aumenta a cada dia. <br><br>
+      Te amar é a melhor sensação que já senti, um abraço que acalma até em dias difíceis. É leve, é forte, é verdadeiro. <br><br>
+      Obrigada por ser meu companheiro, meu amigo, meu amor. Que venham muitos outros capítulos nessa nossa história. <br><br>
+      Feliz dois anos para nós. Eu te amo mais do que qualquer palavra possa descrever, meu bem. <br><br>
+      Com todo meu amor, <br>
+      Danielle 💖
+    </p>
+  </div>
+
+  <script>
+    function mostrarCartinha() {
+      const carta = document.getElementById("cartinha");
+      carta.classList.toggle("escondida");
+    }
+  </script>
+</body>
+</html>
